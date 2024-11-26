@@ -1,0 +1,10 @@
+services:
+  all: 
+    build: .
+    image: ghcr.io/yingchaoorg/local_docs-v1.cn.vuejs.org:master
+    container_name: local_docs-v1-cn-vuejs-org
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
+    ports:
+      - 34807:80
