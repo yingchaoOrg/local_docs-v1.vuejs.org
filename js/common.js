@@ -53,11 +53,13 @@
   function initVersionSelect () {
     // version select
     document.querySelector('.version-select').addEventListener('change', function (e) {
-      var version = e.target.value
-      if (version !== 'SELF') {
-        var section = window.location.pathname.match(/\/(\w+?)\//)[1]
-        window.location.assign('http://' + (version ? version + '.' : '') + 'vuejs.org/' + section + '/')
-      }
+    var version = e.target.value
+
+
+    let herf = "https://cn-vue-v"+version+".docs.yingchao.fun/";
+    console.log("herf",herf);
+     window.location.assign(herf)
+      
     })
   }
 
