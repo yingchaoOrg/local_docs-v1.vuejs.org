@@ -1,7 +1,7 @@
 services:
   all: 
     build: .
-    image: ghcr.io/yingchaoorg/local_docs-v1.cn.vuejs.org:master
+    image: ghcr.io/yingchaoorg/local_docs-v1.vuejs.org:gh-pages
     container_name: local_docs-v1-cn-vuejs-org
     volumes:
       - .:/usr/share/nginx/html
